@@ -4,11 +4,13 @@ import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import org.springframework.stereotype.Component;
 
+import com.authservice.niit.jwtsecurity.model.JwtUser;
+
 @Component
 public class JwtValidator {
 
 
-    private String secret = "youtube";
+    private String secret = "niitCoC";
 
     public JwtUser validate(String token) {
 
